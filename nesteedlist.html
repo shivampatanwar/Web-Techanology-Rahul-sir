@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Nested List</h3>
+    <ol>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>List4
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+            </ul>
+        </li>
+       
+    </ol>
+
+    <p><h3>Nested List ( Wrong because of &lt; ul &gt; and &lt; ol &gt; must only directly contain &lt; li &gt;, &lt; script &gt; or &lt; template &gt; elements : List element has direct children that are not allowed: &lt; ul &gt;)</h3></p>
+    <ol>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+        
+       
+    </ol>
+</body>
+</html>
