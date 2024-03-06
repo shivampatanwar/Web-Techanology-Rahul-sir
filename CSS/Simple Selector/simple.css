@@ -1,0 +1,71 @@
+/* id Selector */
+
+#head1{
+    background-color: red;
+}
+#head2{
+    background-color: blue;
+}
+#head3{
+    background-color: green;
+}
+#head4{
+    background-color: yellow;
+}
+
+
+/* class Selector */
+
+.head1{
+    background-color: purple;
+}
+.head2{
+    background-color: darkgrey;
+}
+.head3{
+    background-color: darkkhaki;
+}
+.head4{
+    background-color: darkorchid;
+}
+
+
+/* Tag Selector */
+
+p{
+    background-color: gray;
+}
+
+h5{
+    background-color: darkorange;
+}
+h6{
+    background-color: darkred;
+}
+
+
+/* Grouping id Selector */
+
+#hd1, #hd2, #hd3, #hd4{
+    background-color: red;
+}
+
+
+/* Grouping class Selector */
+
+.hd1, .hd2, .hd3, .hd4{
+    background-color: blue;
+}
+
+
+/* Grouping Tag Selector */
+
+i, b, mark{
+    background-color: green;
+}
+
+
+*{
+    background-color: black;
+    color: white;
+}
