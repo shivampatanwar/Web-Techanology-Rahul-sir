@@ -1,0 +1,21 @@
+p{
+    font-size: 30px;
+}
+
+
+/* Decendand Selector */
+div h1{background-color: gray;}  /*direct child */
+div section h2{background-color: red;} /* indirect child */
+
+
+/* Child  Selector */
+div>h3{background-color: yellow;}  /*direct child */
+
+
+/* Adjacent Sibling Selector */
+div+strong{background-color: darkgoldenrod;}  
+
+
+
+/* General Sibling Selector */
+div~b{background-color: darkblue;}  

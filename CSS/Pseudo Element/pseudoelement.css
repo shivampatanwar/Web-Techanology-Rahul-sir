@@ -1,0 +1,21 @@
+h1::after{
+    content: "to HTML ";
+}
+h1::before{
+    content: "Hello and ";
+}
+h1::first-letter{
+    color: red ;
+}
+h1::first-line{
+    background-color: yellow;
+}
+
+
+li::marker{
+    content: "▲";
+}
+li::selection{
+    color: white;
+    background-color: black;
+}
