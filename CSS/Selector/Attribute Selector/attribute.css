@@ -1,0 +1,18 @@
+a[target="_blank"]{
+    background-color: red;
+    font-size: 30px;
+    color: white;
+}
+
+
+a[href="https://www.instagram.com"]{
+    background-color: rgb(64, 104, 4);
+    font-size: 30px;
+    color: white;
+}
+
+a[id]{
+    background-color: darkorchid;
+    font-size: 40px;
+    color: white;
+}
