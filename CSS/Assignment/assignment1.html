@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../HTML/Assignment/image/amazon.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body>div{
+            margin: 50px auto;
+            width: 50%;
+            height: max-content;
+            border: 1px solid black;
+            padding: 50px 50px 50px 50px;
+            box-shadow:  0px 0px 20px 2px black;
+        }
+        
+
+        body>div>form>div{
+            display: block;
+            padding: 20px;
+        }
+
+        label{
+            display: inline-block;
+            width: 45%;
+            font-weight: 600;
+            font-size: 17px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input, select{
+            width:50%;
+            font-size: 14px;
+            letter-spacing: 2px;
+            padding: 5px;
+            border: 0px solid black;
+            border-radius: 6px;
+            box-shadow:  1px 1px 4px 1px;
+        }
+
+        select{
+            width: max-content;
+            letter-spacing: normal;
+            font-size: 14px;
+            background-color: transparent;
+            font-weight: 500;
+        }
+
+        input[type="radio"]{
+            width: 4%;
+            letter-spacing: normal;
+            padding: 0px;
+            border: none;
+            border-radius: 0px;
+            box-shadow:  none;
+        }
+
+        input[type="submit"],input[type="reset"] {
+            width: 15%;
+            font-size: 1em;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(65, 65, 243);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: normal;
+            padding: 6px;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-shadow:  1px 1px 1px 1px black;
+        }
+
+
+        input[type="submit"]:hover{
+            background-color: rgb(25, 214, 214);
+            color: black;
+        }
+        input[type="reset"]:hover{
+            background-color: rgb(25, 214, 214);
+            color: black;
+        }
+
+
+        input[type="submit"] {
+            margin-right: 10px;
+        }
+
+        #buttondiv{
+            margin: 50px auto 10px auto;
+            text-align: center;
+        }
+
+        textarea{
+            vertical-align: middle;
+            border-width: 4px;
+            font-size: 16px;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <form method="post" action=" "  name='contact-form'>
+
+            <h2><u>Application Form</u></h2>
+            <div>
+                <label for="fname">First Name : </label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <div>
+                <label for="mname">Middle Name : </label>
+                <input type="text" id="mname" name="mname">
+            </div>
+
+            <div>
+                <label for="lname">Last Name : </label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+
+            <div>
+                <label for="username">UserName : </label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div>
+                <label for="fathername">Father's Name : </label>
+                <input type="text" id="fathername" name="fathername" required>
+            </div>
+
+            <div>
+                <label for="mothername">Mother's Name : </label>
+                <input type="text" id="mothername" name="mothername" required>
+            </div>
+
+
+            <div>
+                <label for="phone">Phone Number : </label>
+                <input type="tel" id="phone" maxlength="10" name="phone" required>
+            </div>
+
+            <div>
+                <label for="age">Age : </label>
+                <select name="age" id="age">
+                    <option value="select" selected>Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="gender">Gender : </label>
+                <input type="radio" id="gender" value="Male" name="gender"><b>Male</b>
+                <input type="radio" id="gender" value="Female" name="gender"><b>Female</b>
+                
+            </div>
+
+            <div>
+                <label for="state">State : </label>
+                <select name="state" id="state">
+                    <option value="select" selected>Select State</option>
+                    <option value="chhattisgarh" >Chhattisgarh</option>
+                    <option value="karnataka" >Karnataka</option>
+                    <option value="tamilnadu" >Tamilnadu</option>
+                    <option value="Andhrapradesh" >Andhra Pradesh</option>
+                    <option value="Telangana" >Telangana</option>
+                    <option value="madhyapradesh" >Madhya Pradesh</option>
+                    <option value="westbengal" >West Bengal</option>
+                    <option value="himachalpradesh" >Himachal Pradesh</option>
+                    
+                </select>
+            </div>
+
+            <div id="textareadiv">
+                <label for="address">Address :</label>
+                <textarea name="address" id="address" cols="35" rows="5" name="address" required></textarea>
+            </div>
+
+            <div>
+                <label for="resumeupload">Upload Resume : </label>
+                <input type="file" id="resumeupload" name="resumeupload">
+            </div>
+
+            <div id="buttondiv">
+                <input type="submit"  id="submit" value="Submit">
+                <input type="reset" id="reset" value="Reset" >
+                
+            </div>
+
+        </form>
+    </div>
+    <script src="stylesheet.js"></script>
+</body>
+<script>
+    document.getElementById('reset').addEventListener('reset');
+</script>
+</html>
