@@ -7,26 +7,46 @@
 
     <style>
         *{
-            margin: 0;
+            margin: 10px;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
+            /* color: white; */
+            font-weight: bold;
         }
 
         nav{
-            height: 70px;
+            color: white;
+            height: 65px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: rgb(4, 80, 80);
+            background-color: rgb(65, 66, 66);
+        }
+
+        .hd2 nav{
+            color: white;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(59, 70, 230);
+        }
+
+        .hd3 nav{
+            color: black;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(197, 243, 243);
         }
 
         .menu{
-            width: 50%  ;
+            width: 40%  ;
         }
 
         .search{
-            width: 350px;
+            width: 420px;
         }
 
         ul{
@@ -36,23 +56,55 @@
             list-style: none;
         }
 
+        li{
+            font-size: 22px;
+        }
+
         ul li a{
             text-decoration: none;
+            font-size: 17px;
+            color: rgb(177, 173, 173);
+        }
+        .hd3 ul li a{
+            text-decoration: none;
+            font-size: 17px;
+            color: rgb(75, 70, 70);
         }
 
         input::placeholder{
             color: black;
+            font-size: 15px;
+            padding: 10px 10px 10px 10px;
         }
 
         input{
-            width: 200px;
-            padding: 3px;
+            width: 250px;
+            height: 34px;
+            /* padding: 3px; */
+            padding: 3px 12px;
+            border-radius: 4px;
+            border: none;
         }
 
         button{
-            color: black;
-            padding: 3px;
+            color: rgb(9, 90, 196);
+            padding: 3px 15px;
+            /* width: 50px; */
+            height: 40px;
+            font-size: 18px;
+            border: 2px solid rgb(9, 90, 196)   ;
+            border-radius: 5px;
 
+            background-color: transparent;
+
+        }
+        .search2 button{
+            color: rgb(51, 49, 49);
+            border: 2px solid rgb(43, 42, 42);
+        }
+        .search2 button{
+            color: rgb(51, 49, 49);
+            border: 2px solid rgb(43, 42, 42);
         }
 
 
@@ -73,6 +125,57 @@
             </div>
             
             <div class="search">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+
+            
+        </nav>
+    </header>
+
+
+   
+    <br>
+    
+    <header class="hd2">
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>Navbar</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>'                
+            </div>
+            
+            <div class="search search2">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+
+            
+        </nav>
+    </header>
+
+    
+
+   
+    <br>
+    
+    <header class="hd3">
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>Navbar</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="search search3">
                 <input type="text" placeholder="Search">
                 <button>Search</button>
             </div>
