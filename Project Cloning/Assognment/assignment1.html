@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        nav{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(4, 80, 80);
+        }
+
+        .menu{
+            width: 50%  ;
+        }
+
+        .search{
+            width: 350px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+        }
+
+        ul li a{
+            text-decoration: none;
+        }
+
+        input::placeholder{
+            color: black;
+        }
+
+        input{
+            width: 200px;
+            padding: 3px;
+        }
+
+        button{
+            color: black;
+            padding: 3px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>Navbar</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+
+            
+        </nav>
+    </header>
+</body>
+</html>
