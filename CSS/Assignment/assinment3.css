@@ -1,0 +1,20 @@
+div{
+    width: 30%;
+    margin: 50px auto;
+    border: 2px solid black;
+    padding: 80px;
+    color: #291f05;
+    background-color: rgb(3, 216, 216);
+}
+
+
+.label{
+    display: inline-block;
+    width: 50%;
+   text-align: center;
+}
+
+input, textarea{
+    width: 60%;
+
+}
