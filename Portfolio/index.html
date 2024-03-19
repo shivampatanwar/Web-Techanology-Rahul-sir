@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            height: 10vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: aqua;
+            z-index: 1;
+            /* background-image: linear-gradient(to right,red, green); */
+        }
+        ul{
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+        }
+
+    
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        #ab{
+            text-align: center;
+            padding-top: 15vh;
+            font-size: 26px;
+        }
+
+        #pr, #ed, #sk{
+            text-align: center;
+            padding-top: 15vh;
+            font-size: 26px;
+        }
+
+        #about, #project,  #skills{
+            /* border: 2px solid red; */
+            margin-top: 40px;
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        #education{
+            /* border: 2px solid red; */
+            margin-top: 40px;
+            padding-top: 50px;
+            /* display: flex; */
+            /* justify-content: space-evenly; */
+            /* text-align: center; */   
+        }
+
+        #about{
+            height: 90vh;
+            width: 60vw;
+            margin: 10px auto;
+        }
+
+        #project{
+            height: 60vh;
+
+        }
+
+        #education{
+            height: 90vh;
+            width: 50vw;
+            
+        }
+
+        #skills{
+            margin-top: 10px;
+            height: 90vh;
+
+        }
+        #skills>table{
+            margin-top: 10px;
+            height: 40vh;
+            width: 30vw;
+
+        }
+        #skills table tr th{
+            padding: 10px;
+
+        }
+
+        #about>.aboutdiv1{
+            width: 300px;
+            height: 400px;
+            /* border: 2px solid rgb(27, 2, 2); */
+            background-image: url("./logo.jpg");
+            background-size: cover;
+            transform: scaleX(-1);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+        }
+
+        #about>.aboutdiv2{
+            text-align: left;
+            padding: 80px  30px;
+            width: 400px;
+            height: 400px;
+            /* border: 2px solid rgb(20, 1, 1); */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            text-align: justify;
+        }
+
+        table{
+            border: 2px solid black;
+            width: 50vw;
+            /* height: max-content; */
+            border-collapse: collapse;
+            
+        }
+        tr, td{
+            border: 2px solid black;
+            font-size: 16px;
+        }
+        th{
+            border: 2px solid black;
+            font-size: 18px;
+            
+        }
+
+        img{
+            width: 80px;
+            height: 80px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#ab">ABOUT ME</a></li>
+                <li><a href="#pr">PROJECT</a></li>
+                <li><a href="#ed">EDUCATION</a></li>
+                <li><a href="#sk">SKILLS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 id="ab">ABOUT ME</h1>
+        <section id="about">
+            <div class="aboutdiv1">
+
+            </div>
+            <div class="aboutdiv2">
+                <h1>Shivam Patanwar</h1><br><br>
+                <p>FrontEnd Developer</p>
+                <p>FullStack Developer</p><br>
+                <p>I am working on three projects. Shivam patanwar website, it is a portfolio website, YashGraphics is a graphics design website and hindu prayer app in hindi </p>
+            </div>
+        </section>
+        
+        <h1 id="pr">PROJECT</h1>
+        <section id="project">
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Language</th>
+                </tr>
+                <tr>
+                    <td>Shivam Patanwar Website</td>
+                    <td>Portfolio</td>
+                    <td>HTML, CSS, JS</td>
+                </tr>
+                <tr>
+                    <td>YashGraphics Website</td>
+                    <td>Portfolio</td>
+                    <td>HTML, CSS, JS, React</td>
+                </tr>
+                <tr>
+                    <td>Hindu Prayer App in Hindi</td>
+                    <td>Android</td>
+                    <td>Java</td>
+                </tr>
+            </table>
+        </section>
+
+        <h1 id="ed">EDUCATION</h1>
+        <section id="education">
+            <dl>
+                <dt>10Th : </dt>
+                <dd>Saraswati Shishu Mandir Dhaniya</dd>
+                <dd>81</dd>
+            </dl>
+
+            <dl>
+                <dt>12Th : </dt>
+                <dd>Saraswati Shishu Mandir Dhaniya</dd>
+                <dd>81</dd>
+            </dl>
+
+            <dl>
+                <dt>Graduation : </dt>
+                <dd>Saraswati Shishu Mandir Dhaniya</dd>
+                <dd>81</dd>
+            </dl>
+        </section>
+
+        <h1 id="sk">SKILLS</h1>
+        <section id="skills">
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Image</th>
+                </tr>
+
+                <tr>
+                    <td>Java</td>
+                    <td><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gcreddy.com%2F2022%2F03%2Fintroduction-to-java-programming.html&psig=AOvVaw1x6YVxBtZLup88GQJLs3Xm&ust=1710568003861000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNDn-cLI9YQDFQAAAAAdAAAAABAE" target="_blank" ><img src="https://www.gcreddy.com/wp-content/uploads/2021/05/Java-Programming-Language.png" alt=""></a></td>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td><a href="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt=""></a></td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopspl.com%2Fblog%2Fcss-animation-using-keyframes%2F&psig=AOvVaw3ScVx8pg2nvl1gBM20wFOy&ust=1710568097233000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCICo_PDI9YQDFQAAAAAdAAAAABAD" target="_blank"><img src="https://opspl.com/wp-content/uploads/2023/10/logo-2582747_1280.png" alt=""></a></td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt=""></a></td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
