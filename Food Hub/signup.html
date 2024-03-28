@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <main>
+        <section class="sectionform">
+            <form action="login.html">
+                <h1>Signup</h1>
+                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Email" required>
+                <input type="text" placeholder="Mobile" required>
+                <input type="text" placeholder="Password" required>
+                <input type="text" placeholder="Re Password" required>
+                <!-- <a class="anchor" href="">Forgot Password</a> -->
+                <div class="button1">
+                    <input type="submit" value="Create">
+                    <!-- <a id="log" href="login.html">Create</a>  -->
+                    <a href="index.html">Home</a>
+                </div>
+                <a class="anchor1" href="login.html">Already have an account <b>Login</b></a>
+            </form>
+        </section>
+
+
+        <style>
+            .hide {
+                display: none
+            }
+        </style>
+   
+        <button type="submit" id="identify" class="btn btn-primary" style="padding: 10px;">Identify</button>
+        <div class="slideRight expandUp hide" id="block1">Text Appears</div>
+    </main>
+
+</body>
+<script>
+
+    if ($('#identify').click(function() {
+        setTimeout(function() {
+            document.getElementById('block1').classList.remove('hide');
+        }, 0);
+        
+        
+        
+        
+    }));
+    document.getElementById('block1').classList.add('hide');
+</script>
+</html>

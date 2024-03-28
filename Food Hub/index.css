@@ -1,0 +1,142 @@
+main{
+    /* height: 200vw; */
+    /* border: 3px solid rgb(0, 140, 255); */
+    /* margin: 3px; */
+    
+}
+
+nav{
+    /* background-color: white; */
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 713px;
+    border-bottom:  opx solid transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* main  Dishes*/
+
+.outer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 50px;
+}
+
+#h1{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 21px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+.outer .inner{
+    width: 25%;
+    text-align: center;
+    box-shadow: 0px 0px ;
+    /* border: 2px dotted black; */
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+
+}
+.dish .inner{
+    width: 25%;
+    text-align: center;
+    /* border: 2px dotted black; */
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+
+}
+
+
+.dishes::-webkit-scrollbar {
+    display: none;
+}
+
+.dishes {
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+} 
+
+
+h3{
+    position: relative;
+    top: -40px;
+    text-align: center;
+}
+.outer .inner img{
+    width: 100%;
+    height: 200px;
+}
+
+.sec{
+    width: 100%;
+    height: 391px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dishes{
+    width: 100%;
+    /* margin: 0px 200px; */
+    height: 300px;
+    /* margin: 0% auto; */
+    overflow: scroll;
+    margin-top: 0px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.dishes .inner{
+    width: 24%;
+    margin: 0px 50px;
+     
+
+}
+.dishes .inner img{
+    width: 200px;
+    height: 200px;
+    border: 0px solid transparent;
+    border-radius: 50%;
+}
+
+img{
+    width: 100%;
+    height: 700px;
+}
+
+h2{
+    margin: 20px auto 20px;
+}
+
+p{
+    text-align: justify;
+    padding: 0px 0px 20px;
+}
+
+button{
+    padding: 5px 30px;
+    margin: 10px auto;  
+    background-color: rgb(64, 64, 241);
+    color: white;
+    box-shadow: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+
+}
+
+button:hover{
+    background-color: rgb(11, 238, 219);
+    color: black;
+   
+}

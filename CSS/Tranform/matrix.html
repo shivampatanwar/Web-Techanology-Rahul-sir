@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin: 50px 200px;
+        }
+        .parent{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 5px solid black;
+            
+            
+        }
+
+        .child{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: all 2s;
+
+            /* transform: matrix(2, 0.5, 2, 2, 20, 20); */
+            /* transform: matrix(1, 0, 0, 2, 0, 0); */
+            /* transform: matrix(1, 0, 2, 1, 1, 1); */
+            /* transform: matrix(2, 0.5, 2, 2, 20, 20); */
+        }
+
+      
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

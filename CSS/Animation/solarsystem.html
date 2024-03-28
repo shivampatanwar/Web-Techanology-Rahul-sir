@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://image.slidesdocs.com/responsive-images/background/stars-fantasy-nature-blue-dark-solar-system-powerpoint-background_34d49dbe5e__960_540.jpg') no-repeat fixed;
+            background-size: 100% 100%;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        @keyframes rotate1 {
+            from{
+                transform: rotate(50deg);
+            }
+            to{
+                transform: rotate(410deg);
+            }
+            
+        }
+        @keyframes rotate2 {
+            from{
+                transform: rotate(120deg);
+            }
+            to{
+                transform: rotate(480deg);
+            }
+            
+        }
+        @keyframes rotate3 {
+            from{
+                transform: rotate(90deg);
+            }
+            to{
+                transform: rotate(450deg);
+            }
+            
+        }
+        @keyframes rotate4 {
+            from{
+                transform: rotate(180deg);
+            }
+            to{
+                transform: rotate(540deg);
+            }
+            
+        }
+
+        .field{
+
+
+            padding: 5px;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            position: absolute; 
+            border: 1px solid white;
+            animation: rotate 10s linear 0s infinite normal;
+
+
+        }
+
+        .field1{
+
+            padding: 19px;
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            position: absolute;
+            border: 1px solid white;
+            animation: rotate1 10s linear 0s infinite normal;
+
+
+        }
+
+        .field2{
+
+            padding: 32px;
+            height: 280px;
+            width: 280px;
+            border-radius: 50%;
+            position: absolute;
+            border: 1px solid white;
+            animation: rotate2 10s linear 0s infinite normal;
+
+
+        }
+        .field3{
+
+            padding: 50px;
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            position: absolute;
+            border: 1px solid white;
+            animation: rotate3 10s linear 0s infinite normal;
+
+
+        }
+        .field4{
+
+            padding: 68px;
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            position: absolute;
+            border: 1px solid white;
+            animation: rotate4 10s linear 0s infinite normal;
+
+
+        }
+
+        .planet{
+
+            width: 35px;
+            height: 35px;
+            background-color: rgb(248, 13, 13);
+            border-radius: 50%;
+        }   
+        
+
+        .planet1{
+
+            width: 40px;
+            height: 40px;
+            background-color: rgb(42, 165, 159);
+            border-radius: 50%;
+        } 
+
+        .planet2{
+
+            width: 35px;
+            height: 35px;
+            background-color: rgb(204, 247, 16);
+            border-radius: 50%;
+        }   
+        .planet3{
+
+            width: 30px;
+            height: 30px;
+            background-color: rgb(241, 11, 126);
+            border-radius: 50%;
+        }   
+        .planet4{
+
+            width: 35px;
+            height: 35px;
+            background-color: rgb(232, 241, 192);
+            border-radius: 50%;
+        }   
+
+
+        .sun{
+            width: 80px;
+            height: 80px;
+            background-color: brown;
+            border-radius: 50%;
+            background-image: url('https://svs.gsfc.nasa.gov/vis/a030000/a030300/a030362/euvi_aia304_2012_carrington_print.jpg');
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+
+
+         
+
+            
+        }
+
+        div{
+              text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="field">
+        <div class="planet"></div> 
+    </div>
+    <div class="field1">
+        <div class="planet1"></div> 
+    </div>
+    <div class="field2">
+        <div class="planet2"></div> 
+    </div>
+    <div class="field3">
+        <div class="planet3"></div> 
+    </div>
+    <div class="field4">
+        <div class="planet4"></div> 
+    </div>
+    <div class="sun">Sun</div>
+</body>
+</html>

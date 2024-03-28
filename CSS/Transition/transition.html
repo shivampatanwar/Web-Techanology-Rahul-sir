@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border-radius: 30px;
+
+            /* transition-property: all; */
+            /* transition-property: width; */
+            /* transition-property: height; */
+            /* transition-property: background-color: red; */
+            transition: all; /* all is by default */
+
+            /* transition-duration: 2s or 2ms;*/
+            /* s ->  second.    ms ->  milisecond*/
+            transition-duration: 2s;
+
+            /* transition-timing-function: linear or ease or  ease-in  or ease-out or ease-in-out or cubic-bezier;*/
+            transition-timing-function: ease;
+
+
+            /* transition-delay: 2s or 5ms; */
+            transition-delay: 1s;
+
+        }
+
+        div:hover{
+            /* height: 400px; */
+            width: 400px;
+            background-color: rgb(204, 207, 20);
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

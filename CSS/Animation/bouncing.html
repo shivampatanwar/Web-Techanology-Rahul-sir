@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes abc {
+            0%{ left: 0%;}
+            25%{ left: 25%; background-color: rgb(247, 21, 21);}
+            50%{ left: 50%; background-color: rgb(247, 21, 21);}
+            75%{ left: 75%; background-color: rgb(247, 21, 21);}
+            100%{left: 100%; background-color: rgb(247, 21, 21);}
+            
+        }
+
+        div{
+            /* width: ; */
+            height: 0.01rem;
+            border: 2px solid transparent;
+            /* border-radius: 50%; */
+            background-color: rgb(224, 11, 11);
+            position: relative;
+            animation: abc 0.9s ease-in-out 1s infinite forwards;
+        }
+
+        spam{
+            background-color: aqua; 
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <span><div></div></span>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 80px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 30px;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 0.5s;
+            
+
+        }
+
+        #box1{
+            background-color: yellow;
+            transition-timing-function: linear;
+        }
+        #box1:hover{
+            /* background-color: yellow; */
+            width: 90%;
+        }
+
+
+        #box2{
+            background-color: rgb(243, 149, 9);
+            transition-timing-function: ease;
+        }
+        #box2:hover{
+            /* background-color: yellow; */
+            width: 90%;
+        }
+
+
+        #box3{
+            background-color: rgb(26, 240, 62);
+            transition-timing-function: ease-in;
+        }
+        #box3:hover{
+            /* background-color: yellow; */
+            width: 90%;
+        }
+
+
+        #box4{
+            background-color: rgb(10, 184, 253);
+            transition-timing-function: ease-out;
+        }
+        #box4:hover{
+            /* background-color: yellow; */
+            width: 90%;
+        }
+
+
+        #box5{
+            background-color: rgb(255, 0, 157);
+            transition-timing-function: ease-in-out;
+        }
+        #box5:hover{
+            /* background-color: yellow; */
+            width: 90%;
+        }
+
+
+        #box6{
+            background-color: rgb(255, 0, 0);
+            transition-timing-function: cubic-bezier(.48,-0.36,.27,1.48);
+        }
+        #box6:hover{
+            /* background-color: yellow; */
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">linear</div><br>
+    <div class="box" id="box2">ease</div><br>
+    <div class="box" id="box3">ease-in</div><br>
+    <div class="box" id="box4">ease-out</div><br>
+    <div class="box" id="box5">ease-in-out</div><br>
+    <div class="box" id="box6">cubic-bezier</div>
+</body>
+</html>

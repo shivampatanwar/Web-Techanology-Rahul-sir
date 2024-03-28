@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: aqua;
+            height: 55px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100vw;
+            list-style: none;
+
+        }
+
+        .menubtn {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+
+
+        @media screen and (min-width:0px) and (max-width:450px) {
+            nav {
+                background-color: rgb(157, 255, 0);
+            }
+
+
+            .menubtn {
+                display: block;
+            }
+
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                width: 100vw;
+                list-style: none;
+                position: absolute;
+                top: 55px;
+                right: 0px;
+                background-color: rgb(228, 222, 222);
+                width: 40%;
+                height: 100vh;
+                text-align: start;
+                padding: 20px;
+
+            }
+
+            li {
+                margin: 10px 10px;
+            }
+
+            /* .menubtn.open .div1 {
+                transition: all 5s ease-in-out 0s;
+                transform: rotate(-40deg);
+                position: absolute;
+                top: 10px;
+                right: 10px;
+
+            }
+
+            .menubtn.open .div2 {
+                display: none;
+
+            }
+
+            .menubtn.open .div3 {
+                transition: all 5s ease-in-out 0s;
+                transform: rotate(40deg);
+                position: absolute;
+                top: 10px;
+                right: 10px;
+
+            } */
+
+        }
+
+
+        @media screen and (min-width:450px) and (max-width:850px) {
+            nav {
+                background-color: rgb(255, 0, 234);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="uls">
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+            <li>Order</li>
+            <li>Cart</li>
+            <li>Login</li>
+            <li>Signup</li>
+        </ul>
+
+        <div class="menubtn" onclick="func()">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </div>
+    </nav>
+
+
+
+</body>
+
+<script>
+    let btn = document.getElementsByClassName('menubtn');
+    let b = document.getElementById('uls');
+
+    btn.addEventListener("click", func());
+    function func() {
+        if (b.style.display === "none") {
+            b.style.display = "flex";
+        }
+        else {
+            b.style.display = "none";
+
+        }
+    }
+
+
+    $(document).ready(function(){
+        $('.menubtn').click(function(){
+            $(this).toggleClass('open');
+        });
+    });
+
+
+
+</script>
+
+</html>
