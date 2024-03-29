@@ -6,10 +6,6 @@
     /* box-sizing:content-box; */
 }
 
-main{
-    margin-top: 50px;
-}
-
 nav{
     height: 50px;
     /* border: 2px solid black; */
@@ -18,14 +14,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #57acf7;
-    position: fixed;
-    width: 100%;
-    top: 0;
 
 }
 
 .logo, .menu{
-    width: 450px;
+    width: 400px;
     height: 40px;
     /* border: 2px solid red; */
     display: flex;
@@ -83,10 +76,3 @@ nav{
     width: 200px;
     height: 50px;
 }
-
-
-
-
-
-
-/* footer */

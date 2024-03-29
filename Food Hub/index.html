@@ -16,88 +16,130 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>FoodHub</h1>
+                <img src="icon.png" alt="icon">
+                <img src="name.png" alt="name">
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Dishes</a></li>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./signup.html">Signup</a></li>
-                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="dishes.html">DISHES</a></li>
+                    <li><a href="./recipes.html">RECIPES</a></li>
+                    <li><a href="./signup.html">SIGNUP</a></li>
+                    <li><a href="./login.html">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
+        <div class="slideshow">
 
-        <section class="slider">
-           <img src="./bg.jpg" alt="">
-        </section>
+            <div class="mySlides">
+                <img src="img1.jpg" alt="img3">
+            </div>
 
-        <style>
-            .dishes{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-        </style>
+            <div class="mySlides">
+                <img src="img2.jpg" alt="img3">
+            </div>
+
+            <div class="mySlides">
+                <img src="img3.jpg" alt="img3">
+            </div>
+
+            <div class="dots" >
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
 
         
-        <h1 id="h1">SOUTH INDIAN DISHES</h1>
-        <section class="sec">
+
+    
+
+
+        <h1 id="h1">DISHES</h1>
+        <section class="section">
             
             <section class="dishes">
                 <div class="inner">
-                    <img src="./bg.jpg" alt="">
+                    <img src="idly.png" alt="">
                     <h3>IDLY</h3>
                 </div>
                 <div class="inner">
-                    <img src="./bg.jpg" alt="">
+                    <img src="dosha.png" alt="">
                     <h3>DOSA</h3>
                 </div>
                 <div class="inner">
-                    <img src="./bg.jpg" alt="">
-                    <h3>MEAL</h3>
+                    <img src="VADA.avif" alt="">
+                    <h3>VADA</h3>
+                </div>
+                <div class="inner">
+                    <img src="lamon.png" alt="">
+                    <h3>LAMON RICE</h3>
+                </div>
+                <div class="inner">
+                    <img src="curd.png" alt="">
+                    <h3>CURD RICE</h3>
+                </div>
+                <div class="inner">
+                    <img src="pongal.png" alt="">
+                    <h3>PONGAL RICE</h3>
+                </div>
+                <div class="inner">
+                    <img src="appam.png" alt="">
+                    <h3>APPAM</h3>
+                </div>
+                <div class="inner">
+                    <img src="sambar.png" alt="">
+                    <h3>SAMBAR</h3>
+                </div>
+                <div class="inner">
+                    <img src="rasam.png" alt="">
+                    <h3>RASAM</h3>
+                </div>
+                <div class="inner">
+                    <img src="chole.png" alt="">
+                    <h3>CHOLE</h3>
+                </div>
+                <div class="inner">
+                    <img src="upma.png" alt="">
+                    <h3>UPMA</h3>
+                </div>
+                <div class="inner">
+                    <img src="dhokla.webp" alt="">
+                    <h3>DHOKLA</h3>
+                </div>
+                <div class="inner">
+                    <img src="halwa.png" alt="">
+                    <h3>HALWA</h3>
                 </div>
                 <div class="inner">
                     <img src="./bg.jpg" alt="">
                     <h3>PONGAL</h3>
                 </div>
-    
-            </section>
-        </section>
-
-
-        <h1 id="h1">NORTH INDIAN DISHES</h1>
-        <section class="sec">
-            
-            <section class="dishes">
                 <div class="inner">
                     <img src="./bg.jpg" alt="">
-                    <h3>IDLY</h3>
-                </div>
-                <div class="inner">
-                    <img src="./bg.jpg" alt="">
-                    <h3>IDLY</h3>
-                </div>
-                <div class="inner">
-                    <img src="./bg.jpg" alt="">
-                    <h3>DOSA</h3>
-                </div>
-                <div class="inner">
-                    <img src="./bg.jpg" alt="">
-                    <h3>MEAL</h3>
+                    <h3>PONGAL</h3>
                 </div>
                 <div class="inner">
                     <img src="./bg.jpg" alt="">
                     <h3>PONGAL</h3>
                 </div>
-    
+                <div class="inner">
+                    <img src="./bg.jpg" alt="">
+                    <h3>PONGAL</h3>
+                </div>
+                <div class="inner">
+                    <img src="./bg.jpg" alt="">
+                    <h3>PONGAL</h3>
+                </div>
+            
+
             </section>
         </section>
 
-       
 
 
     </main>
@@ -107,5 +149,27 @@
     </footer>
 
 </body>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+</script>
 
 </html>
