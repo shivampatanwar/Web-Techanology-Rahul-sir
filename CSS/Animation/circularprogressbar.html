@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes circular {
+
+            from {
+                background: conic-gradient(hotpink 0%);
+            }
+
+            to {
+                background: conic-gradient(hotpink 100%);
+            }
+
+        }
+
+        body {
+            width: auto;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(closest-side, white 79%, transparent 100%);
+            animation: circular 10s ease 0s  1 normal ;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
