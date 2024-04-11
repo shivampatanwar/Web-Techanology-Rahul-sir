@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1, h2, h3{
+            font-size: 30px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            margin: 0px 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>WELCOME JAVASCRIPT    <button onclick="changeColorByTag()">CLICK</button></h1>
+    
+
+    <h2 class="h2">WELCOME JAVASCRIPT   <button onclick="changeColorByClass()">CLICK</button></h2>
+
+    <h3 id="h3">WELCOME JAVASCRIPT   <button onclick="changeColorById()">CLICK</button></h3>
+    
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
