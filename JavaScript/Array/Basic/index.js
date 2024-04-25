@@ -1,5 +1,5 @@
 
-let arr = ["Array", 1235, true, undefined, NaN, 1245n];
+let arr = ["Array", 1235, true, undefined, NaN, null, 1245n];
 
 // Print Method 1
 console.log(arr);
