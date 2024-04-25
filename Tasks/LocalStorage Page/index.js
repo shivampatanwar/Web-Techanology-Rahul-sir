@@ -24,7 +24,7 @@ function login(){
 
 
     if(username1==user1 && password1==pass1){
-        alert("Account Seccessfully Created");
+        alert("Account Seccessfully Logged in");
         window.location.assign("./home.html");
     }
     else{
